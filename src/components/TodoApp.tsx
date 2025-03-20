@@ -47,6 +47,14 @@ export default function TodoApp() {
     setTodos(todos.filter((todo) => todo.id !== id));
   };
 
+  const editTodo = (id: string, newText: string) => {
+    setTodos(
+      todos.map((todo) =>
+        todo.id === id ? { ...todo, text: newText } : todo
+      )
+    );
+  };
+
   if (loading) {
     return <div className="w-full text-center dark:text-white">Loading...</div>;
   }
@@ -54,7 +62,12 @@ export default function TodoApp() {
   return (
     <div className="w-full p-6 bg-white dark:bg-gray-800 rounded-lg shadow-lg">
       <TodoForm addTodo={addTodo} />
-      <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
+      <TodoList 
+        todos={todos} 
+        toggleTodo={toggleTodo} 
+        deleteTodo={deleteTodo} 
+        editTodo={editTodo}
+      />
     </div>
   );
 } 
