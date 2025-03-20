@@ -6,6 +6,9 @@
 
 # testing
 /coverage
+.nyc_output
+/junit.xml
+/.eslintcache
 
 # next.js
 /.next/
