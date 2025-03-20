@@ -1,13 +1,15 @@
-# Cursor Vibe Todo App
+# Cursor Vibe Todo App Demo
 
 A simple, elegant Todo application built with Next.js, TypeScript, and Tailwind CSS.
 
 ## Features
 
 - Create, toggle, and delete todos
+- Edit existing todos
 - Persistent storage using localStorage
 - Responsive design with Tailwind CSS
 - TypeScript for type safety
+- Dark mode support
 
 ## Getting Started
 
@@ -20,8 +22,8 @@ A simple, elegant Todo application built with Next.js, TypeScript, and Tailwind 
 
 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/cursor-vibe-to-do-app.git
-cd cursor-vibe-to-do-app
+git clone https://github.com/AslanGoldenhour/cursor-vibe-to-do-app-demo.git
+cd cursor-vibe-to-do-app-demo
 ```
 
 2. Install dependencies
@@ -45,12 +47,14 @@ yarn dev
 - `src/app/` - Next.js app router pages
 - `src/components/` - Reusable UI components
 - `src/types/` - TypeScript type definitions
+- `.cursor/rules/` - Cursor AI assistant rules
 
 ## Technology Stack
 
 - [Next.js](https://nextjs.org/) - React framework
 - [TypeScript](https://www.typescriptlang.org/) - Static typing
 - [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- [Jest](https://jestjs.io/) & [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) - Testing
 
 ## License
 
